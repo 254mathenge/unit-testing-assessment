@@ -53,15 +53,7 @@ export function calculateGradesAndAverageRe(re) {
 calculateGradesAndAverageRe();
 export function calculateGradesAndAverage() {
   const average =
-    (student.math +
-      student.eng +
-      student.kis +
-      student.phy +
-      student.che +
-      student.re +
-      student.comp) /
-    7;
-  
+    (student.kis + student.phy + student.che + student.re + student.comp) / 7;
 
   student = {
     name: "Faith",
@@ -84,6 +76,6 @@ export function calculateGradesAndAverage() {
     re: calculateGradesAndAverageRe(student.re),
     comp: calculateGradesAndAverageLanguages(student.comp),
   };
-}  
+}
 
 console.log(calculateGradesAndAverage());
